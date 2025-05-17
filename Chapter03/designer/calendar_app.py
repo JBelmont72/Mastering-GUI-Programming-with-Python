@@ -5,7 +5,8 @@ from PyQt5 import QtCore as qtc
 from category_window import Ui_CategoryWindow
 from PyQt5 import uic
 
-MW_Ui, MW_Base = uic.loadUiType('calendar_form.ui')
+# MW_Ui, MW_Base = uic.loadUiType('calendar_form.ui')
+MW_Ui, MW_Base = uic.loadUiType('Chapter03/designer/calendar_form.ui')
 
 
 class CategoryWindow(qtw.QWidget):
