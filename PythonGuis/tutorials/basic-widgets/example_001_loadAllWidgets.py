@@ -51,9 +51,9 @@ class MainWindow(QMainWindow):
 
         for w in widgets:
             layout.addWidget(w())
-
-        widget = QWidget()
-        widget.setLayout(layout)
+        widget = QWidget()  # Create a QWidget to hold the layout
+        widget.setLayout(layout)# Set the layout to the QWidget
+        # Set the QWidget as the central widget of the QMainWindow      
         self.setCentralWidget(widget)
 
 
