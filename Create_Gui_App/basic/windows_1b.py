@@ -35,6 +35,7 @@ class MainWindow(QMainWindow):
     def show_new_window(self, is_checked):
         self.w = AnotherWindow()
         self.w.show()
+ 
 
     # end::show_new_window[]
 
@@ -43,3 +44,5 @@ app = QApplication(sys.argv)
 window = MainWindow()
 window.show()
 app.exec_()
+
+

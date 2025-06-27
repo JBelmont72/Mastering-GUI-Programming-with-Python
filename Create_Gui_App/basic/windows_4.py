@@ -10,7 +10,6 @@ from PyQt5.QtWidgets import (
     QWidget,
 )
 
-
 class AnotherWindow(QWidget):
     """
     This "window" is a QWidget. If it has no parent, it
@@ -30,12 +29,20 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.w = None  # No external window yet.
         self.button = QPushButton("Push for Window")
+        self.button.setCheckable(True)
         self.button.clicked.connect(self.show_new_window)
         self.setCentralWidget(self.button)
 
-    # tag::show_new_window[]
+    # tag::show_new_window[] ## both ways work, one is use the boolean value of 'is_checked',second is setting window to None etc.
     def show_new_window(self, is_checked):
-        if self.w is None:
+        print(is_checked)
+        # if self.w is None:
+        #     self.w = AnotherWindow()
+        #     self.w.show()
+
+        # else:
+        #     self.w = None  # Discard reference, close window.
+        if is_checked ==True:
             self.w = AnotherWindow()
             self.w.show()
 
