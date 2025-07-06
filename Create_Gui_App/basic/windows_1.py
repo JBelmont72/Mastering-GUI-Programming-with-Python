@@ -1,4 +1,4 @@
-/Users/judsonbelmont/Documents/Shared_Folders/Mastering-GUI-Programming-with-Python/Create_Gui_App/basic/windows_1.py
+#/Users/judsonbelmont/Documents/Shared_Folders/Mastering-GUI-Programming-with-Python/Create_Gui_App/basic/windows_1.py
 
 import sys
 from PyQt5.QtWidgets import (
