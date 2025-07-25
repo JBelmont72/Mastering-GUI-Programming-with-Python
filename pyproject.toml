@@ -7,5 +7,6 @@ requires-python = ">=3.9.6"
 dependencies = [
     "pyinstaller==3.4",
     "pyqt5>=5.15.11",
+    "pyqtgraph>=0.13.7",
     "setuptools==41.0.1",
 ]
