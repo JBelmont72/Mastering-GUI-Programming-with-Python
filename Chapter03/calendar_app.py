@@ -57,6 +57,8 @@ class MainWindow(qtw.QWidget):
         # Create our widgets
         self.calendar = qtw.QCalendarWidget()
         self.event_list = qtw.QListWidget()
+        myEventListItem=qtw.QListWidgetItem('this is my event_list QListWidget')
+        self.event_list.addItem(myEventListItem)
         self.event_title = qtw.QLineEdit()
         self.event_category = qtw.QComboBox()
         self.event_time = qtw.QTimeEdit(qtc.QTime(8, 0))

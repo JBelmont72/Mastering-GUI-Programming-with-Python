@@ -47,3 +47,14 @@ if __name__ == '__main__':
     # if it goes out of scope, it will be destroyed.
     mw = MainWindow()
     sys.exit(app.exec())
+
+
+# buttons= []
+# button_texts=['a','b','c','d','e','f','g','x','y','z']
+# for num, button_text in enumerate(button_texts):
+#     buttons.append(button_texts)
+#     row = num // 4
+#     column = num % 4
+#     print(f'Index: {num} , button_text: {button_text} , row {row} , column: {column}')
+# print(buttons)
+# print(len(buttons))       

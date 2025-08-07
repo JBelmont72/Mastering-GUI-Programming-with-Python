@@ -6,7 +6,9 @@ class MainWindow(qtw.QWidget):
 
     def __init__(self):
         """MainWindow constructor."""
-        super().__init__()
+        # super().__init__()
+        # or this is fine
+        super(MainWindow,self).__init__()
 
         # Configure the window
         self.setWindowTitle("My Calendar App")
@@ -15,6 +17,14 @@ class MainWindow(qtw.QWidget):
         # Create our widgets
         self.calendar = qtw.QCalendarWidget()
         self.event_list = qtw.QListWidget()
+        # played with QListWidget (see Chapter3/myCalendarWorks.py)
+        listWidgetItem=qtw.QListWidgetItem('hello from Judson')
+        self.event_list.addItem(listWidgetItem)
+        listWidgetItem=qtw.QListWidgetItem('I am the event_list qtw.QListWidget')
+        self.event_list.addItem(listWidgetItem)
+        self.count=self.event_list.count()
+        print(self.count)
+        
         self.event_title = qtw.QLineEdit()
         self.event_category = qtw.QComboBox()
         self.event_time = qtw.QTimeEdit(qtc.QTime(8, 0))
