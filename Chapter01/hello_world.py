@@ -7,6 +7,8 @@ basic steps:  p 34
 3.Display our main application window
 4. Call QApplication.exec() to start the event loop
 first is basic elements, second refined to class structure
+
+uv pip install -r requirements.txt || uv pip install --upgrade --all
 '''
 
 # from PyQt5 import QtWidgets
